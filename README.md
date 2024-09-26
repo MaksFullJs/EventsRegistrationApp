@@ -74,5 +74,8 @@ Firstly, you should download zip of this project and unzip it.
 ![image](https://github.com/user-attachments/assets/3be6a1d8-2be9-4120-b2fb-1e0451e74bed)
 
 
+## To check functionality download this project and follow my instructions.
+
+
 
 
