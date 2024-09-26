@@ -83,7 +83,6 @@ app.post("/register", (req, res) => {
         return res.status(400).send({ message: "All fields are required." });
     }
 
-    // Перевірка наявності користувача
     const checkUserQuery = "SELECT id FROM user WHERE email = ?";
     mysqlConnection.query(checkUserQuery, [email], (err, userResult) => {
         if (err) {
@@ -92,7 +91,6 @@ app.post("/register", (req, res) => {
         }
         let userId;
         if (userResult.length === 0) {
-            // Якщо користувача немає, створюємо нового
             const insertUserQuery = "INSERT INTO user (full_name, email, birthdate) VALUES (?, ?, ?)";
             mysqlConnection.query(insertUserQuery, [fullName, email, birthdate], (err, insertResult) => {
                 if (err) {
@@ -103,14 +101,12 @@ app.post("/register", (req, res) => {
                 registerUserEvent(userId, eventId, source, res);
             });
         } else {
-            // Якщо користувач існує, беремо його ID
             userId = userResult[0].id;
             registerUserEvent(userId, eventId, source, res);
         }
     });
 });
 
-// Функція для реєстрації користувача на подію
 function registerUserEvent(userId, eventId, source, res) {
     const checkUserEventQuery = "SELECT * FROM user_event WHERE user_id = ? AND event_id = ?";
     mysqlConnection.query(checkUserEventQuery, [userId, eventId], (err, userEventResult) => {
