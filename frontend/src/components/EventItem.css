@@ -1,0 +1,39 @@
+.event__title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.event__main_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event__desc {
+    margin-top: 5px;
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.event__btn_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event__btn {
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+}
+
+.event__btn:hover {
+    color: darkblue;
+}
+
+.event__btn:focus {
+    outline: none;
+}
