@@ -28,6 +28,7 @@ Firstly, you should download zip of this project and unzip it.
    ```
     
 2. **Create db_config.js file for connection to db:**
+   
    example:
    ```bash
    host: 'localhost',
@@ -37,24 +38,24 @@ Firstly, you should download zip of this project and unzip it.
    password: 'your_password'
    ```
    
-3. **Run local mysql db:**
-   sql code for my db u can find in folder resources test-task.sql file
+4. **Run local mysql db:**
+   sql code for my db u can find in folder -- resources -- test-task.sql file
 
-4. **Start the backend server:**
+5. **Start the backend server:**
 
    ```bash
    cd backend
    node server.js
    ```
    
-5. **Install the frontend dependencies:**
+6. **Install the frontend dependencies:**
    
     ```bash
    cd frontend
    npm install
    ```
 
-6. **Start the frontend server:**
+7. **Start the frontend server:**
 
    ```bash
    cd frontend
