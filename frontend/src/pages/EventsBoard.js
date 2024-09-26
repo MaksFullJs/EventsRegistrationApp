@@ -53,7 +53,7 @@ function EventsBoard() {
   const handleSortChange = (e) => {
     setSortOrder(e.target.value);
     console.log(e.target.value);
-    setPage(1); // Скидаємо на першу сторінку при зміні сортування
+    setPage(1); 
   };
 
 
