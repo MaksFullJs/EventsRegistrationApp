@@ -1,0 +1,21 @@
+.container {
+    padding-top: 20px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.catalog-block-with-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #333;
+}

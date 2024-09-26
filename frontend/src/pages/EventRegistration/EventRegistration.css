@@ -1,0 +1,77 @@
+.signup__page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Стилі для форми */
+.signup__form {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+
+.signup__form h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.input__field {
+    margin-bottom: 25px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid #f7aa38;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.input__field input {
+    width: 100%;
+    background: transparent;
+    padding: 10px 12px;
+    font-weight: bold;
+    border: 1px solid white;
+    outline: white;
+}
+
+.ant-picker-outlined:hover {
+    border: 2px solid #f7aa38;
+}
+
+.input__radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__radio p:not(:last-child) {
+    margin-right: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.input__btn {
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #f7aa38;;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 35px;
+
+}
