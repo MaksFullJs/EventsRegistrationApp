@@ -10,7 +10,7 @@ function EventParticipants() {
     const [participants, setParticipants] = useState([]);
     const [event, setEvent] = useState({});
     const { id } = useParams();
-    const [searchTerm, setSearchTerm] = useState(""); // Стат для пошукового терміна
+    const [searchTerm, setSearchTerm] = useState(""); 
 
 
     useEffect(() => {
@@ -55,16 +55,16 @@ function EventParticipants() {
                 type="text"
                 placeholder="Search by name or email"
                 value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)} // Оновлюємо стан пошуку
+                onChange={(e) => setSearchTerm(e.target.value)} 
                 style={{ marginBottom: '20px', padding: '8px', width: '300px' }}
             />
             <div className='catalog-block-with-card'>
                 {participants.filter((item) => {
                     const lowerCaseSearchTerm = searchTerm.toLowerCase();
                     return lowerCaseSearchTerm === ''
-                        ? true // Повертаємо всі елементи, якщо рядок пошуку порожній
+                        ? true 
                         : (item.full_name && item.full_name.toLowerCase().includes(lowerCaseSearchTerm)) ||
-                        (item.email && item.email.toLowerCase().includes(lowerCaseSearchTerm)); // Перевіряємо, чи item.full_name і item.email визначені
+                        (item.email && item.email.toLowerCase().includes(lowerCaseSearchTerm)); 
                 }).map(({ id, full_name, email }, idx) => (
                     <ParticipantItem
                         id={id}
