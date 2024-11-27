@@ -1,4 +1,4 @@
-# 🐾 Events Registration App( Middle level)
+# 🐾 Events Registration App
 
 This project is a web-based application for events registration.
 
